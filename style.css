@@ -1,0 +1,41 @@
+body {
+    font-size: 14px;
+    color: rgb(221, 19, 144);
+    font-family:
+    
+}
+
+h2 {
+    color:black;
+    font-size: 22px;
+    font-weight: bold;
+    text-align:justify;
+}
+
+h3 {
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+}
+
+h4{
+    font-size: 16px;
+    color: black;
+}
+
+.header img {
+    color: #0065fc
+    
+
+}
+
+.header-nav a{
+    color: #0065fc
+
+}
+
+footer {
+    color: rgb(22, 177, 73);
+    
+}
+
