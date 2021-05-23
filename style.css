@@ -1,7 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
 body {
     font-size: 14px;
-    color: rgb(221, 19, 144);
-    font-family:
+    color: rgb(19, 22, 221);
     
 }
 
@@ -23,15 +31,49 @@ h4{
     color: black;
 }
 
-.header img {
-    color: #0065fc
-    
+/*header*/
+.logo-reservia {
+    width: 180px;
+    border: 1px solid black;
+}
 
+.logo-reservia img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .header-nav a{
-    color: #0065fc
+    color: #0065fc;
 
+}
+
+/*etoile*/
+.etoile .blue{
+    color: #0065fc;
+}
+
+.etoile .grey{
+    color: #F2F2F2; 
+}
+
+/*section populaire*/
+
+
+/*images*/
+section {
+    
+}
+
+.section-div .soleil {
+    width: 300px;
+    border: 1px solide black;
+}
+
+.soleil img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
 }
 
 footer {
