@@ -9,8 +9,7 @@
 
 body {
     font-size: 14px;
-    color: rgb(19, 22, 221);
-    
+    color: black;
 }
 
 h2 {
@@ -26,7 +25,7 @@ h3 {
     text-align: justify;
 }
 
-h4{
+h4 {
     font-size: 16px;
     color: black;
 }
@@ -49,11 +48,11 @@ h4{
 }
 
 /*etoile*/
-.etoile .blue{
+.etoile .blue {
     color: #0065fc;
 }
 
-.etoile .grey{
+.etoile .grey {
     color: #F2F2F2; 
 }
 
@@ -61,7 +60,7 @@ h4{
 
 
 /*images*/
-section {
+.statistique {
     
 }
 
@@ -76,8 +75,111 @@ section {
     object-fit: contain;
 }
 
+.section-div .coeur {
+    width: 300px;
+    border: 1px solide black
+}
+
+.coeur img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.section-div .bleublanc {
+    width: 300px;
+    height: 1px solide black;
+}
+
+.bleublanc img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.section .canebiere {
+    width: 300px;
+    height: 1px solide black;
+}
+
+.canebiere img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+
+}
+
+.section .vieuxport {
+    width: 300px;
+    height: 1px solide black;
+}
+
+.vieuxport img {
+    width: 40%;
+    height: 40 %;
+    object-fit: contain;
+}
+
+.section .pomegues {
+    width: 300px;
+    height: 1px solide black;
+}
+
+.pomegues img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.section .frioul {
+    width: 300px;
+    height: 1px solide black;
+}
+
+.frioul img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.section .calanques {
+    width: 300px;
+    height: 1px solide black;
+}
+
+.calanques img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.section .garde {
+    width: 300px;
+    height: 1px solide black;
+}
+
+.garde img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.section .longchamp {
+    width: 300px;
+    height: 1px solide black;
+}
+
+.longchamp img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+
 footer {
     color: rgb(22, 177, 73);
     
+    
 }
+
 
