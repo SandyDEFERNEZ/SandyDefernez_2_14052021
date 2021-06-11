@@ -28,15 +28,15 @@
 
                     <div class="sinscrire">
 
-                        <li id="hebergements">
+                        <li class="active" id="hebergements">
                             <a href="#">Hébergements</a>
                         </li>
 
-                        <li id="activite">
+                        <li class="active" id="activite">
                             <a href="#">Activités</a>
                         </li>
                     </div>
-                    
+
                 </ul>
             </nav>
             
@@ -48,11 +48,12 @@
             <h2>Trouver votre hébergement pour des vacances de rêve</h2>
                     
                 <p>En plein centre ville ou en pleine nature</p>
+        
+                <!--bloc avec position-->    
             
             <form method="post">
-                <div class="position">      
-                            <!--bloc avec position-->
-
+                                    
+                <div class="position">                       
                     <label for="rechercher">
                         <i class="fas fa-map-marker-alt"></i>
                     </label>
@@ -62,7 +63,6 @@
                     <button i="Rechercher">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
-              
                 </div>
 
             </form>
@@ -74,6 +74,7 @@
             <form method="post">
                 
                 <h3>Filtres</h3>
+
                         <!--bloc avec les 4 filtres-->
 
                 <label for="economique">
@@ -108,13 +109,21 @@
                 </label>
                 <input type="radio" id="animaux" name="animaux"/>
 
-                <div class="info">
-                    <div><i class="fas fa-info"></i></div>      
+                <!--information-->
+
+                <div class="information">
+                    <div class="info">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                
                 </div>
 
             </form>
         </section>
+
+                    <!--populaires-->
 
         <section class="populaires">
 
@@ -179,6 +188,8 @@
                     </span>
                 </a>
         </section>
+
+                        <!--Marseille-->
 
         <section class="marseille">
             <h3> Hébergements à Marseille</h3>
