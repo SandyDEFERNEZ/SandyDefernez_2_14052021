@@ -104,18 +104,18 @@ header .sinscrire {
     width: 50%;
 }
 
-#hebergements a:active {
-    background: blue;
-    border-bottom: 1px solid blue;
+.sinscrire li.active a {
+    color: #0065fc;
+    border-bottom: 3px solid blue;
 }
 
 #activite {
     width: 50%;
 }
 
-#activite a:active {
-    background:#0065fc;
-    border-bottom: 2px solid #0065fc;
+.sinscrire li.active a {
+    color:#0065fc;
+    border-bottom: 3px solid #0065fc;
 }
 
 
@@ -137,47 +137,50 @@ section.recherche p {
 }
 
 form .position {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 25px;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    margin: 25px 25px 0px 25px;
+    padding:0;
 }
 
 .position label i {
-    padding: 10px;
+    padding: 12px;
+    margin:0;
     border: 1px solid #e7e7e7;
     border-radius: 13px;
     background-color: #e7e7e7;
 }
 
 .position input {
+    width: 60%;
     padding: 10px;
+    margin:0;
     border: 1px solid #e7e7e7;
     background-color: #fff;
     
 }
 
 .position button i {
-    padding: 10px;
-    border-radius: 10px;
+    padding: 12px;
+    margin:0;
     background-color: #0065fc;
-    color: #fff;    
+    border-radius: 13px;
+    color: #fff;
+    border: #fff;
 }
+
 
 /*section filtres*/
 
-section.filtres form {
-    border: 1px solid black;
+.filtres form {
     width: 100%;
     padding: 20px;
     margin-bottom: 20px;    
 }
 
-section.filtres h3 {
+.filtres h3 {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -217,25 +220,32 @@ section.filtres h3 {
     background-color: #87b3f5;
 }
 
-.info i {
+            /*Information*/
+
+.information {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #e7e7e7;
-    border-radius: 25px;
-    height: 25px;
-    width: 25px;
-    margin-top: 3px;
-    margin-left: 5px;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+
 }
 
-.info p {
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: 400;
-    text-shadow: 5px;
-    justify-content: left;
+.information .info {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.information .info i {
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 50px;
+}
+
+.information p {
+    text-align: justify;
+    margin-left: 15px;
+        
 }
 
 /*section populaire*/
@@ -245,7 +255,6 @@ section.populaires {
     margin: 5px;
     background-color: #e7e7e7;
     border: 1px solid #e7e7e7;
-    border-radius: 20px;
 }
 
 section.populaires h3 {
@@ -302,17 +311,17 @@ section.populaires h3 {
 /*section marseille*/
 
 section.marseille {
+    display: block;    
     padding: 35px 5px;
     margin: 5px;
-    border-radius: 10px;
 }
 
-section.marseille h3 {
+.marseille h3 {
     display: block;
     margin-left: 25px;
 }
 
-section.marseille .hebergement {
+.marseille .hebergement {
     display: block;
     padding: 3px;
     margin: 15px;
@@ -336,20 +345,19 @@ section.marseille .hebergement {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
- }
+}
 
  .hebergement .texte {
     width: 100%;
     height: 50px;
     padding-left: 10px;
- }
+}
 
 .hebergement .texte span {
    display: block;
 }
 
-button {
+.marseille button {
     color: black;
     font-weight: 700;
     font-size: 15px;
@@ -361,14 +369,14 @@ button {
 /* section activites*/
 
 section.activites {
-    display: block;
-    padding: 40px 15px;
+    padding: 35px 5px;
     margin: 5px;
-    background-color: #fff;
 }
 
 section.activites h3 {
     display: block;
+    margin-left: 25px;
+    justify-content: center;
 }
 
 section.activites .visite {
