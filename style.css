@@ -9,6 +9,7 @@
 
 body {
     color: black;
+    font-weight: 400;
 }
 
 /* Titres */
@@ -149,7 +150,8 @@ form .position {
     padding: 12px;
     margin:0;
     border: 1px solid #e7e7e7;
-    border-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
     background-color: #e7e7e7;
 }
 
@@ -159,7 +161,6 @@ form .position {
     margin:0;
     border: 1px solid #e7e7e7;
     background-color: #fff;
-    
 }
 
 .position button i {
@@ -222,30 +223,34 @@ form .position {
 
             /*Information*/
 
-.information {
+.informations {
     display: flex;
-    flex-direction: row;
-    width: 100%;
     margin-top: 30px;
-
+    padding: 20px;
 }
 
-.information .info {
-    display: block;
-    align-items: center;
+.informations .infos {
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #e7e7e7;
+    background-color: #fff;
+    border-radius: 100px;
     justify-content: center;
 }
 
-.information .info i {
-    padding: 10px;
-    border: 1px solid #e7e7e7;
-    border-radius: 50px;
+.informations .infos i {
+    color: #0065fc;  
 }
 
-.information p {
-    text-align: justify;
-    margin-left: 15px;
-        
+.information .dispo {
+    display: inline-flex;
+    
+}
+
+.information .dispo p {
+    justify-content: center;
+    padding: 10px;
+    margin: 7px;
 }
 
 /*section populaire*/
@@ -272,20 +277,21 @@ section.populaires h3 {
 .populaires .hotel {
     padding: 5px;
     margin: 5px;
+    background: 100%;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px rgba(23, 23, 23, 0.3);
+    box-shadow: 2px 2px 1px rgba(23, 23, 23, 0.3);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .populaires .cadre {
-    display: block;
+    display: inline;
     width: 40%;
     height: 120px;
-    margin-left: 10px;
-    overflow: hidden;
+    padding-left: 1px;
 }
 
 .hotel img {
@@ -308,7 +314,7 @@ section.populaires h3 {
 
 
 
-/*section marseille*/
+/*section marseille hébergement*/
 
 section.marseille {
     display: block;    
@@ -329,7 +335,7 @@ section.marseille {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(92, 91, 91, 0.3);
-    
+    overflow: hidden;
 }
 
 .marseille .cadre {
@@ -366,34 +372,36 @@ section.marseille {
 }
 
 
-/* section activites*/
+/* section activites à Marseille*/
+
 
 section.activites {
+    display: block;
     padding: 35px 5px;
     margin: 5px;
+    justify-content: center;
 }
 
 section.activites h3 {
-    display: block;
     margin-left: 25px;
+    margin-bottom: 25px;
     justify-content: center;
 }
 
 section.activites .visite {
     display: block;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid #ececec;
-    background-color: #fff;
+    margin-bottom: 25px;
+    border: 1px solid #f7f7f7;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px rgba(23, 23, 23, 0.3);
+    box-shadow: 2px 2px 1px rgba(23, 23, 23, 0.3);
+    overflow: hidden;
 }
 
 .activites .cadre {
     display: block;
-    border: 1px solid #ececec;
-    padding: 5px;
-    width: 100%;  
+    width: 100%;
+    height: 120px;
+    
 }
 
 .visite img {
@@ -404,6 +412,9 @@ section.activites .visite {
 
 .visite .lieu {
     display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -411,12 +422,13 @@ section.activites .visite {
 
 footer {
     background-color: #e7e7e7;
+    color:black;
     padding: 45px 25px;
     margin-top: 40px;
 }
 
 footer .bloc-nav {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 footer .bloc-nav h4 {
@@ -425,6 +437,7 @@ footer .bloc-nav h4 {
 
 footer .bloc-nav li {
     margin-bottom: 8px;
+    color: black;
 }
 
 
