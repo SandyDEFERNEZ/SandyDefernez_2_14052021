@@ -90,8 +90,7 @@ header li {
 }
 
 #inscrire {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 20px;
@@ -127,48 +126,60 @@ header li {
 
 /*Section recherche*/
 
-section.recherche h2 {
-    width: 100%;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 0.5em;
-    margin-inline-start: 25px;
-    margin-inline-end: 0px;
+section.recherche {
+    padding: 20px;
 }
 
-section.recherche p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 25px;
-    margin-inline-end: 15px;
+section.recherche h2 {
+    width: 100%;
+    margin-bottom: 8px;
 }
 
 form .position {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
-    padding: 15px 25px;
+    width: 80%;
+    margin-top: 20px;
+    border: none;
+}
+
+.position label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
 }
 
 .position label i {
     padding: 12px;
     margin:0;
-    border: 1px solid #e7e7e7;
     border-top-left-radius: 13px;
     border-bottom-left-radius: 13px;
     background-color: #e7e7e7;
+    border: none;
+}
+
+.position {
+    border: 1px solid #e7e7e7;
+    position: relative;
 }
 
 .position input {
     width: 100%;
-    flex: 1;
-    padding: 10px;
-    margin:0;
-    border: 1px solid #e7e7e7;
+    padding: 0 40px;
+    margin: 0;
     font-weight: bold;
     font-size: 18px;
+    height: 38px;
+    border: 1px solid #e7e7e7;
+    border-radius: 13px;
+    
+}
+
+.position input::placeholder {
+    color: #000;
 }
 
 .position button {
@@ -176,8 +187,18 @@ form .position {
     justify-content: center;
     padding: 12px;
     margin:0;
+    width: 38px;
+    height: 38px;
     background-color: #0065fc;
     border-radius: 13px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.position button .rechercher {
+    display: none;
 }
 
 .position button i {
@@ -208,7 +229,7 @@ form .position {
     border: 3px solid #ececec;
     line-height: 33px;
     padding: 0px 15px 0px 45px;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 .filtres input {
@@ -245,6 +266,7 @@ form .position {
     display: flex;
     width: 100%;
     padding: 10px 20px;
+    
 }
 
 .filtres p .infos {
@@ -386,7 +408,6 @@ section.marseille {
     color: black;
     font-weight: 700;
     font-size: 15px;
-    margin-left: 5px;
     margin-top: 10px;
     border: none;
     background: none;
@@ -464,3 +485,280 @@ footer.bloc-nav {
 }
 
 
+/*Responsive Media Queries*/
+
+                /* De 480 à 768 pixels*/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+      
+                    /* Recherche*/
+    section.recherche {
+        width: 100%;
+    }
+    form .position {
+        display: flex;
+        width: 80%;
+    }
+                
+    .position button {
+        width: initial;
+        height: initial;
+    }
+    
+    .position button .rechercher {
+        display: block;
+    }
+
+    .position button .icon {
+        display: none;
+    }
+
+                    /* Filtres*/
+    .filtre p {
+        align-items: center;
+    }
+           
+                     /* Section Populaire*/
+    section.populaires {
+        max-width: 576px;
+        display: block;
+        padding: 25px 15px 25px 15px;
+        margin: 5px 25px;
+        border-radius: 20px;
+    }
+
+                    /* Section Marseille hébergement*/
+    section.marseille {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 1px solid #f7f7f7;
+        border-radius: 20px;
+        box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
+        background-color: #e7e7e7;
+        padding: none;
+        margin: 15px 0px;
+    }
+
+    .marseille h3 {
+        width: 100%;
+    }
+
+    .marseille .hebergement {
+        display: block;
+        width: 30%;
+        height: 220px;
+        padding: none;
+        margin: 10px auto;
+    }
+
+    .marseille .texte .lieu {
+        height: 45px;
+    }
+
+    .marseille button {
+        display: block;
+        padding: 5px 25px;
+    }
+}
+
+                        /* De 768 à 992 pixels*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+                
+                    /* En tête avec LOGO*/
+    header nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 25px;
+    }
+
+    header nav ul li {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #logo {
+        width: 60%;
+        order: 0;
+    }
+            
+    #inscrire {
+        width: 12%;
+        order: 3;
+    }
+    
+    #herbergements {
+        order: 1;    
+    }
+
+    #activite {
+        order: 2;
+    }
+        
+    #hebergements,
+    #activite {
+        width: 12%;
+        text-align: none;
+        border: none;
+        padding: 0;
+    }
+                        /* section Recherche*/
+    form .position {
+        display: flex;
+        width: 100%;
+        max-width: 340px;
+        align-items: center;
+    }
+                                
+    .position button {
+        width: initial;
+        height: initial;
+    }
+                    
+    .position button .rechercher {
+        display: block;
+    }
+    
+    .position button .icon {
+        display: none;
+    }
+                
+                /* Section Filtres*/
+    .filtres form {
+        padding: 0px 25px;
+    }
+
+    .filtres h3 {
+        width: auto;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+                /* Section Populaire et Marseille hébergement*/
+    .container {
+        display: flex;
+        width: 100%;
+    }
+    
+    section.populaires {
+        width: 40%;
+        height: 580px;
+        display: block;
+        padding: 25px 15px 25px 15px;
+        margin: 5px 15px;
+        border-radius: 20px;
+    }
+
+     section.marseille {
+        width: 60%;
+        height: 580px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 1px solid #f7f7f7;
+        border-radius: 20px;
+        box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
+        background-color: #e7e7e7;
+        padding: none;
+        margin: 5px 15px;
+    }
+
+    .marseille h3 {
+        width: 100%;
+    }
+
+    .marseille .hebergement {
+        display: block;
+        width: 30%;
+        height: 220px;
+        padding: none;
+        margin: 10px auto;
+    }
+
+    .marseille .texte .lieu {
+        height: 45px;
+    }
+
+    .marseille button {
+        display: block;
+        padding: 5px 25px;
+    }
+
+    
+                    /* Pied de page*/
+    footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+                        /* De 992 à 1200 pixels*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+                    /* Recherche*/
+    form .position {
+        display: flex;
+        width: 100%;
+        max-width: 340px;
+    }
+                                
+    .position button {
+        width: initial;
+        height: initial;
+    }
+                    
+    .position button .rechercher {
+        display: block;
+    }
+                
+    .position button .icon {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 100px 35px 20px;
+    }
+}
+
+                        /* à partir de 1200 pixels*/
+
+@media screen and (min-width: 1200px) {
+                        /* Recherche*/
+    form .position {
+        display: flex;
+        max-width: 340px;
+    }
+                                    
+    .position button {
+        width: initial;
+        height: initial;
+    }
+                        
+    .position button .rechercher {
+        display: block;
+    }
+                    
+    .position button .icon {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 200px 35px 25px;
+    }
+}
