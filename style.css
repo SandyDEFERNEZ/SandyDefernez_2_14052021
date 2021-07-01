@@ -412,7 +412,7 @@ section.activites h3 {
     margin-bottom: 15px;
 }
 
-section.activites .visite {
+section.activites .grande {
     display: block;
     margin-bottom: 20px;
     border: 1px solid #f7f7f7;
@@ -421,22 +421,49 @@ section.activites .visite {
     overflow: hidden;
 }
 
-.activites .cadre {
+section.activites .petite {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
+    overflow: hidden;
+}
+
+.activites .grande .cadre {
     display: block;
     width: 100%;
     height: 120px;
     
 }
 
-.visite img {
+.activites .petite .cadre {
+    display: block;
+    width: 100%;
+    height: 120px;
+    
+}
+.grande img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.visite .lieu {
+.grande .lieu {
     display: block;
     padding: 15px 0px 10px 20px;
+    height: 60px;
+}
+.petite img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.petite .lieu {
+    display: block;
+    padding: 15px 0px 10px 20px;
+    height: 60px;
 }
 
 
@@ -469,7 +496,9 @@ footer.bloc-nav {
 }
 
 
-/*Responsive Media Queries*/
+
+        /*Responsive Media Queries*/
+
 
                 /* De 480 à 768 pixels*/
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -506,7 +535,7 @@ footer.bloc-nav {
         max-width: 576px;
         display: block;
         padding: 25px 15px 25px 15px;
-        margin: 5px 25px;
+        margin: auto;
         border-radius: 20px;
     }
 
@@ -541,15 +570,16 @@ footer.bloc-nav {
         padding: 5px 25px;
     }
 
-        /* Section Activité Marseille*/
+            /* Section Activité Marseille*/
     section.activites {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        padding: 15px 30px;
     }
     .activites h3 {
         width: 100%;
-        padding: 10px 0px 10px 20px;
+        padding: 10px 0px;
     }
 }
 
@@ -638,32 +668,32 @@ footer.bloc-nav {
 
     section.populaires {
         width: 40%;
-        height: 580px;
         display: block;
         padding: 25px 15px 25px 15px;
         margin: 5px 10px;
         border-radius: 20px;
     }
     .populaires h3 {
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
     .populaires i {
         margin-bottom: 0px;
     }
     .populaires .hotel {
-        margin: 10px 0px 30px 0px;
+        margin: 0px 0px 20px 0px;
+    }
+    .populaires .cadre {     
+        height: 200px;
     }
 
     section.marseille {
         width: 60%;
-        height: 580px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         border: 1px solid #f7f7f7;
         border-radius: 20px;
         background-color: #e7e7e7;
-        padding: none;
         margin: 5px 10px;
     }
     .marseille h3 {
@@ -671,9 +701,9 @@ footer.bloc-nav {
     }
     .marseille .hebergement {
         display: block;
-        width: 30%;
+        width: 40%;
         height: 220px;
-        padding: none;
+        padding: 2px;
         margin: 10px auto;
     }
     .marseille .texte .lieu {
@@ -683,6 +713,128 @@ footer.bloc-nav {
         display: block;
         padding: 5px 25px;
     }
+                    /*Activite à Marseille*/
+
+    section.activites {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    section.activites h3 {
+        width: 100%;
+        margin: 0;
+        padding: 15px 5px;
+    }
+
+    /*grandes images*/
+    .activites .large {
+        display: block;
+        width: 23%;
+    }
+    .activites .large .grande {
+        width: 100%;
+        border: 1px solid #f7f7f7;
+        border-radius: 20px;
+        box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
+        overflow: hidden;
+    }
+    .activites .large .grande .cadre {
+        display: block;
+        width: 100%;
+        height: 360px;
+    }
+    .activites .large .grande .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .large .grande .cadre .lieu {
+        display: block;
+        padding: 15px 0px 10px 20px;
+    }
+
+    /* Medium*/
+    .activites .medium {
+        display: block;
+        width: 23%;
+    }
+    .activites .medium .grande {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .activites .medium .grande .cadre {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    .activites .medium .grande .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .medium .grande .cadre .lieu {
+        display: block;
+    }
+
+    .activites .medium .petite {
+        width: 100%;
+        margin:0px;
+    }
+    .activites .medium .petite .cadre {
+        display: block;
+        width: 100%;
+        height: 80px;
+    }
+    .activites .medium .petite .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .medium .petite .cadre .lieu {
+        display: block;
+    }
+
+    /*Moyenne*/
+    .activites .moyenne {
+        display: block;
+        width: 23%;
+    }
+    .activites .moyenne .grande {
+        width: 100%;
+    }
+    .activites .moyenne .grande .cadre {
+        display: block;
+        width: 100%;
+        height: 180px;
+    }
+    .activites .moyenne .grande .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .moyenne .grande .cadre .lieu {
+        display: block;
+    }
+
+    .activites .moyenne .petite {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .activites .moyenne .petite .cadre {
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+    .activites .moyenne .petite .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .moyenne .petite .cadre .lieu {
+        display: block;
+    }                 
     
                     /* Pied de page*/
     footer {
@@ -717,6 +869,7 @@ footer.bloc-nav {
     }
     #inscrire {
         width: 12%;
+        justify-content: initial;
         order: 3;
     }
     #herbergements {
@@ -731,6 +884,28 @@ footer.bloc-nav {
         text-align: none;
         border: none;
         padding: 0;
+    }
+    #hebergements,
+    #activite {
+        text-align: center;
+        border-top: 3px solid #e7e7e7;
+        padding: 20px 0px 10px 0px;
+    }
+
+    #hebergements a,
+    #activite a {
+        color: black;
+        font-weight: bold;
+    }
+
+    #hebergements:hover,
+    #activite:hover {
+        border-color: #0065FC;
+    }
+
+    #hebergements:hover a,
+    #activite:hover a {
+        color: #0065FC !important;
     }
 
                     /* section Recherche*/
@@ -824,6 +999,133 @@ footer.bloc-nav {
         padding: 5px 25px;
     }
 
+                    /*Activite à Marseille*/
+
+    section.activites {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    
+    section.activites h3 {
+        width: 100%;
+        margin: 0;
+        padding: 15px 25px;
+
+    }
+
+    /*grandes images*/
+    .activites .large {
+        display: block;
+        width: 22%;
+    }
+    .activites .large .grande {
+        width: 100%;
+        border: 1px solid #f7f7f7;
+        border-radius: 20px;
+        box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
+        overflow: hidden;
+    }
+    .activites .large .grande .cadre {
+        display: block;
+        width: 100%;
+        height: 360px;
+    }
+    .activites .large .grande .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .large .grande .cadre .lieu {
+        display: block;
+        padding: 15px 0px 10px 20px;
+    }
+
+        /* Medium*/
+    
+    .activites .medium {
+        display: block;
+        width: 22%;
+    }
+    .activites .medium .grande {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .activites .medium .grande .cadre {
+        display: block;
+        width: 100%;
+        height: 180px;
+    }
+    .activites .medium .grande .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .medium .grande .cadre .lieu {
+        display: block;
+    }
+
+    .activites .medium .petite {
+        width: 100%;
+        margin:0px;
+    }
+    .activites .medium .petite .cadre {
+        display: block;
+        width: 100%;
+        height: 80px;
+    }
+    .activites .medium .petite .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .medium .petite .cadre .lieu {
+        display: block;
+    }
+
+    /*Moyenne*/
+    .activites .moyenne {
+        display: block;
+        width: 22%;
+    }
+
+    .activites .moyenne .petite {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .activites .moyenne .petite .cadre {
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+    .activites .moyenne .petite .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .moyenne .petite .cadre .lieu {
+        display: block;
+    }
+
+    .activites .moyenne .grande {
+        width: 100%;
+        margin:0px;
+    }
+    .activites .moyenne .grande .cadre {
+        display: block;
+        width: 100%;
+        height: 150px;
+    }
+    .activites .moyenne .grande .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .moyenne .grande .cadre .lieu {
+        display: block;
+    }
+
                   /* Pied de page*/
     footer {
         width: 100%;
@@ -832,8 +1134,8 @@ footer.bloc-nav {
         justify-content: space-between;
         padding: 20px 100px 35px 20px;
     }
-
 }
+
 
                      /* à partir de 1200 pixels*/
 
@@ -874,6 +1176,28 @@ footer.bloc-nav {
         border: none;
         padding: 0;
     }
+    #hebergements,
+    #activite {
+        text-align: center;
+        border-top: 3px solid #e7e7e7;
+        padding: 20px 0px 10px 0px;
+    }
+
+    #hebergements a,
+    #activite a {
+        color: black;
+        font-weight: bold;
+    }
+
+    #hebergements:hover,
+    #activite:hover {
+        border-color: #0065FC;
+    }
+
+    #hebergements:hover a,
+    #activite:hover a {
+        color: #0065FC !important;
+    }
 
                     /* section Recherche*/
     section.recherche {
@@ -933,7 +1257,7 @@ footer.bloc-nav {
         margin-bottom: 0px;
     }
     .populaires .hotel {
-        margin: 10px 0px 30px 0px;
+        margin: 0px 20px 23px 20px;
     }
 
     section.marseille {
@@ -950,6 +1274,7 @@ footer.bloc-nav {
     }
     .marseille h3 {
         width: 100%;
+        margin-bottom: 10px;
     }
     .marseille .hebergement {
         display: block;
@@ -966,172 +1291,144 @@ footer.bloc-nav {
         padding: 5px 25px;
     }
 
-                /*Activite à Marseille*/
-    
+    /*Activite à Marseille*/
+
     section.activites {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        height: 500px;
-        border: 1px solid black;
+        justify-content: space-between;
+        margin: 20px;
     }
     
     section.activites h3 {
         width: 100%;
         margin: 0;
-        padding: 15px;
+        padding: 15px 25px;
 
     }
 
     /*grandes images*/
     .activites .large {
         display: block;
-        width: 20%;
-        height: 400px;
+        width: 22%;
     }
-    .activites .large .visite {
+    .activites .large .grande {
         width: 100%;
         border: 1px solid #f7f7f7;
         border-radius: 20px;
         box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
         overflow: hidden;
     }
-    .activites .large .visite .cadre {
+    .activites .large .grande .cadre {
         display: block;
         width: 100%;
-        height: 350px;
+        height: 360px;
     }
-    .activites .large .visite .cadre .visite img {
+    .activites .large .grande .cadre img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .activites .large .visite .cadre .visite .lieu {
+    .activites .large .grande .cadre .lieu {
         display: block;
         padding: 15px 0px 10px 20px;
     }
 
-    /* moyennes images*/
+        /* Medium*/
+    
     .activites .medium {
         display: block;
-        width: 30%;
-        height: 200px;
+        width: 22%;
     }
-    .activites .medium .visite {
+    .activites .medium .grande {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .activites .medium .grande .cadre {
+        display: block;
+        width: 100%;
+        height: 180px;
+    }
+    .activites .medium .grande .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .medium .grande .cadre .lieu {
+        display: block;
+    }
+
+    .activites .medium .petite {
         width: 100%;
         margin:0px;
     }
-    .activites .medium .visite .cadre {
+    .activites .medium .petite .cadre {
+        display: block;
+        width: 100%;
+        height: 80px;
+    }
+    .activites .medium .petite .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .medium .petite .cadre .lieu {
+        display: block;
+    }
+
+    /*Moyenne*/
+    .activites .moyenne {
+        display: block;
+        width: 22%;
+    }
+
+    .activites .moyenne .petite {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .activites .moyenne .petite .cadre {
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+    .activites .moyenne .petite .cadre img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activites .moyenne .petite .cadre .lieu {
+        display: block;
+        padding-bottom: 25px;
+    }
+
+    .activites .moyenne .grande {
+        width: 100%;
+        margin:0px;
+    }
+    .activites .moyenne .grande .cadre {
         display: block;
         width: 100%;
         height: 150px;
     }
-    .activites .medium .visite .cadre .visite img {
+    .activites .moyenne .grande .cadre img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .activites .medium .visite .cadre .visite .lieu {
+    .activites .moyenne .grande .cadre .lieu {
         display: block;
-        padding: 15px 0px 10px 20px;
     }
 
-    /*petites images*/
-    .activites .smal {
-        display:block;
-        width : 30%;
-        height: 100px;
-    }
-    .activites .smal .visite {
-        display: block;
-        border: 1px solid #f7f7f7;
-        border-radius: 20px;
-        box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
-        overflow: hidden;
-    }
-    .activites .smal .visite .cadre {
-        display: block;
-        width: 100%;
-        height: 100px;
-    }
-    .activites .smal .visite .cadre .visite img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .activites .smal .visite .cadre .visite .lieu {
-        display: block;
-        padding: 15px 0px 10px 20px;
-    }
-
-    /*très petites images*/
-    .activites .xsmal {
-        display: block;
-        width: 30%;
-        height: 150px;
-    }
-    .activites .xsmal .visite {
-        margin: 0;
-    }
-    .activites .xsmal .visite .cadre {
-        display: block;
-        width: 100%;
-        height: 100px;
-    }
-    .activites .xsmal .visite .cadre .visite img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .activites .xsmal .visite .cadre .visite .lieu {
-        display: block;
-        padding: 15px 0px 10px 20px;
-    }
-
-             /* Pied de page*/
+                 /* Pied de page*/
 
     footer {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 20px 300px 35px 20px;
+        padding: 20px 350px 35px 20px;
     }
         
 }
 
-
-
-
-
-
-
-    
-    section.activites .visite {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        border: 1px solid #f7f7f7;
-        border-radius: 20px;
-        box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
-        overflow: hidden;
-    }
-    
-    .activites .cadre {
-        display: block;
-        width: 100%;
-        height: 120px;
-        
-    }
-    
-    .visite img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .visite .lieu {
-        display: block;
-        padding: 15px 0px 10px 20px;
-    }
 
