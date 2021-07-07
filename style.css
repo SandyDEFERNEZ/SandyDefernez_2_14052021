@@ -63,26 +63,21 @@ a span.prix {
 
 
 /*header*/
-
 header ul {
     display: flex;
     flex-wrap: wrap;
 }
-
 header li {
     width: 50%;
 }
-
 #logo {  
     padding-left: 20px;
 }
-
 #logo a {
     display: block;
     width: 120px;
     height: 50px;
 }
-
 #logo img {
     width: 100%;
     height: 100%;
@@ -95,7 +90,6 @@ header li {
     justify-content: flex-end;
     padding-right: 20px;
 }
-
 #inscrire a {
     color:#0065fc;
     font-weight: 700;
@@ -107,18 +101,15 @@ header li {
     border-bottom: 3px solid #e7e7e7;
     padding: 20px 0px 10px 0px;
 }
-
 #hebergements a,
 #activite a {
     color: black;
     font-weight: bold;
 }
-
 #hebergements:hover,
 #activite:hover {
     border-color: #0065FC;
 }
-
 #hebergements:hover a,
 #activite:hover a {
     color: #0065FC !important;
@@ -129,12 +120,10 @@ header li {
 section.recherche {
     padding: 20px;
 }
-
 section.recherche h2 {
     width: 100%;
     margin-bottom: 8px;
 }
-
 form .position {
     display: flex;
     flex-wrap: wrap;
@@ -143,7 +132,6 @@ form .position {
     margin-top: 20px;
     border: none;
 }
-
 .position label {
     position: absolute;
     top: 0;
@@ -151,7 +139,6 @@ form .position {
     width: 38px;
     height: 38px;
 }
-
 .position label i {
     padding: 12px;
     margin:0;
@@ -160,12 +147,10 @@ form .position {
     background-color: #e7e7e7;
     border: none;
 }
-
 .position {
     border: 1px solid #e7e7e7;
     position: relative;
 }
-
 .position input {
     width: 100%;
     padding: 0 40px;
@@ -175,13 +160,10 @@ form .position {
     height: 38px;
     border: 1px solid #e7e7e7;
     border-radius: 13px;
-    
 }
-
 .position input::placeholder {
     color: #000;
 }
-
 .position button {
     display: flex;
     justify-content: center;
@@ -196,11 +178,9 @@ form .position {
     top: 0;
     right: 0;
 }
-
 .position button .rechercher {
     display: none;
 }
-
 .position button i {
     color: #fff;
     outline-style: none;
