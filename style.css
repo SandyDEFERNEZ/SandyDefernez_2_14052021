@@ -116,7 +116,6 @@ header li {
 }
 
 /*Section recherche*/
-
 section.recherche {
     padding: 20px;
 }
@@ -190,17 +189,14 @@ form .position {
 }
 
 /*section filtres*/
-
 .filtres form {
     width: 100%;
     padding: 5px 25px 10px 25px;
 }
-
 .filtres h3 {
     width: 100%;
     padding-bottom: 10px;
 }
-
 .filtres label {    
     display: inline-block;
     position: relative;
@@ -211,17 +207,14 @@ form .position {
     padding: 0px 15px 0px 45px;
     margin: 5px;
 }
-
 .filtres input {
     opacity: 0;
     position: absolute;
     left: 0px;
 }
-
 .filtres i {
     color: #0065FC;
 }
-
 .filtres .pastille {
     display: flex;
     flex-wrap: wrap;
@@ -235,20 +228,16 @@ form .position {
     width: 40px;
     background-color: #b7cff3;
 }
-
 .filtres span {
     font-weight: bold;
 }
 
 /*Information*/
-
 .filtres p {
     display: flex;
     width: 100%;
     padding: 10px 20px;
-    
 }
-
 .filtres p .infos {
     display: flex;
     justify-content: center;
@@ -259,27 +248,24 @@ form .position {
     background-color: #fff;
     border-radius: 50%;
 }
- 
 .filtres p .infos i {
     color: #0065fc;
     font-size: 10px;  
 }
-
 .filtres .dispo {
     width: 100%;
     display: flex;
     text-align: justify;
-    padding: 0px 10px;
+    padding: 4px 10px 0px 10px;
     color: #6d6a6a
 }
 
 /*section populaire*/
-
 section.populaires {
     padding: 25px 15px 25px 15px;
     margin: 5px 0px;
     background-color: #e7e7e7;
-    border: 1px solid #e7e7e7;
+    border: 1px solid #e6e6e6;
 }
 section.populaires h3 {
     width: 100%;
@@ -327,7 +313,6 @@ section.populaires h3 {
 }
 
 /*section marseille hébergement*/
-
 section.marseille {
     display: block;    
     padding: 20px 5px;
@@ -379,19 +364,16 @@ section.marseille {
 }
 
 /* section activites à Marseille*/
-
 section.activites {
     display: block;
     padding: 0px 5px;
     margin: 5px;
     justify-content: center;
 }
-
 section.activites h3 {
     margin-left: 5px;
     margin-bottom: 15px;
 }
-
 section.activites .grande {
     display: block;
     margin-bottom: 20px;
@@ -400,7 +382,6 @@ section.activites .grande {
     box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
     overflow: hidden;
 }
-
 section.activites .petite {
     display: block;
     margin-bottom: 20px;
@@ -409,26 +390,21 @@ section.activites .petite {
     box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
     overflow: hidden;
 }
-
 .activites .grande .cadre {
     display: block;
     width: 100%;
     height: 120px;
-    
 }
-
 .activites .petite .cadre {
     display: block;
     width: 100%;
     height: 120px;
-    
 }
 .grande img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .grande .lieu {
     display: block;
     padding: 15px 0px 10px 20px;
@@ -439,7 +415,6 @@ section.activites .petite {
     height: 100%;
     object-fit: cover;
 }
-
 .petite .lieu {
     display: block;
     padding: 15px 0px 10px 20px;
@@ -448,26 +423,21 @@ section.activites .petite {
 
 
 /* pied de page*/
-
 footer {
     background-color: #e7e7e7;
     color:black;
     padding: 20px 25px 35px 25px;
 }
-
 footer.bloc-nav {
     display: block;
 }
-
 .bloc-nav h3 {
     color: black;
     padding: 15px 5px;
 }
-
 .bloc-nav li {
     margin-bottom: 3px;
 }
-
 .bloc-nav li a {
     color: #696767;
     font-size: 14px;
@@ -494,11 +464,16 @@ footer.bloc-nav {
                 
     .position button {
         width: initial;
-        height: initial;
+        height: 38px;
+        align-items: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
     
     .position button .rechercher {
         display: block;
+        color: #fff;
+        font-size: 16px;
     }
 
     .position button .icon {
@@ -529,7 +504,7 @@ footer.bloc-nav {
         border-radius: 20px;
         box-shadow: 0.5em 0.5em 1.5em rgba(155, 153, 153, 0.3);
         background-color: #e7e7e7;
-        padding: none;
+        padding: 0;
         margin: 15px 0px;
     }
     .marseille h3 {
@@ -539,7 +514,7 @@ footer.bloc-nav {
         display: block;
         width: 30%;
         height: 220px;
-        padding: none;
+        padding: 0;
         margin: 10px auto;
     }
     .marseille .texte .lieu {
@@ -615,10 +590,15 @@ footer.bloc-nav {
     }
     .position button {
         width: initial;
-        height: initial;
+        height: 38px;
+        align-items: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
     .position button .rechercher {
         display: block;
+        color: #fff;
+        font-size: 16px;
     }
     .position button .icon {
         display: none;
@@ -851,6 +831,7 @@ footer.bloc-nav {
         width: 12%;
         justify-content: initial;
         order: 3;
+        padding: 20px 20px 0px 0px;
     }
     #herbergements {
         order: 1;    
@@ -900,10 +881,15 @@ footer.bloc-nav {
     }
     .position button {
         width: initial;
-        height: initial;
+        height: 38px;
+        align-items: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
     .position button .rechercher {
         display: block;
+        color: #fff;
+        font-size: 16px;
     }
     .position button .icon {
         display: none;
@@ -958,7 +944,7 @@ footer.bloc-nav {
         border: 1px solid #f7f7f7;
         border-radius: 20px;
         background-color: #e7e7e7;
-        padding: none;
+        padding: 0;
         margin: 5px 10px;
     }
     .marseille h3 {
@@ -968,7 +954,7 @@ footer.bloc-nav {
         display: block;
         width: 30%;
         height: 220px;
-        padding: none;
+        padding: 0;
         margin: 10px auto;
     }
     .marseille .texte .lieu {
@@ -1142,6 +1128,8 @@ footer.bloc-nav {
     #inscrire {
         width: 12%;
         order: 3;
+        justify-content: initial;
+        padding: 20px 20px 0px 0px;
     }
     #herbergements {
         order: 1;    
@@ -1162,13 +1150,11 @@ footer.bloc-nav {
         border-top: 3px solid #e7e7e7;
         padding: 20px 0px 10px 0px;
     }
-
     #hebergements a,
     #activite a {
         color: black;
         font-weight: bold;
     }
-
     #hebergements:hover,
     #activite:hover {
         border-color: #0065FC;
@@ -1191,10 +1177,15 @@ footer.bloc-nav {
     }
     .position button {
         width: initial;
-        height: initial;
+        height: 38px;
+        align-items: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
     .position button .rechercher {
         display: block;
+        color: #fff;
+        font-size: 16px;
     }
     .position button .icon {
         display: none;
@@ -1249,7 +1240,7 @@ footer.bloc-nav {
         border: 1px solid #f7f7f7;
         border-radius: 20px;
         background-color: #e7e7e7;
-        padding: none;
+        padding: 0;
         margin: 5px 10px;
     }
     .marseille h3 {
@@ -1260,7 +1251,7 @@ footer.bloc-nav {
         display: block;
         width: 30%;
         height: 220px;
-        padding: none;
+        padding: 0;
         margin: 10px auto;
     }
     .marseille .texte .lieu {
