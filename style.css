@@ -573,8 +573,8 @@ footer.bloc-nav {
     #hebergements,
     #activite {
         width: 12%;
-        text-align: none;
-        border: none;
+        text-align: center;
+        border: 0;
         padding: 0;
     }
 
@@ -831,7 +831,7 @@ footer.bloc-nav {
         width: 12%;
         justify-content: initial;
         order: 3;
-        padding: 20px 20px 0px 0px;
+        padding: 15px 20px 0px 0px;
     }
     #herbergements {
         order: 1;    
@@ -842,14 +842,14 @@ footer.bloc-nav {
     #hebergements,
     #activite {
         width: 12%;
-        text-align: none;
-        border: none;
+        text-align: center;
+        border: 0;
         padding: 0;
     }
     #hebergements,
     #activite {
         text-align: center;
-        border-top: 3px solid #e7e7e7;
+        border-top: 3px solid #fff;
         padding: 20px 0px 10px 0px;
     }
 
@@ -949,6 +949,7 @@ footer.bloc-nav {
     }
     .marseille h3 {
         width: 100%;
+        padding: 25px 0px 0px 0px;
     }
     .marseille .hebergement {
         display: block;
@@ -1129,7 +1130,7 @@ footer.bloc-nav {
         width: 12%;
         order: 3;
         justify-content: initial;
-        padding: 20px 20px 0px 0px;
+        padding: 15px 20px 0px 0px;
     }
     #herbergements {
         order: 1;    
@@ -1140,14 +1141,14 @@ footer.bloc-nav {
     #hebergements,
     #activite {
         width: 12%;
-        text-align: none;
-        border: none;
+        align-items: center;
+        border: 0;
         padding: 0;
     }
     #hebergements,
     #activite {
         text-align: center;
-        border-top: 3px solid #e7e7e7;
+        border-top: 3px solid #fff;
         padding: 20px 0px 10px 0px;
     }
     #hebergements a,
@@ -1246,6 +1247,7 @@ footer.bloc-nav {
     .marseille h3 {
         width: 100%;
         margin-bottom: 10px;
+        padding: 25px 0px 0px 0px;
     }
     .marseille .hebergement {
         display: block;
