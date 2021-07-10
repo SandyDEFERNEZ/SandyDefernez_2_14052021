@@ -207,6 +207,9 @@ form .position {
     padding: 0px 15px 0px 45px;
     margin: 5px;
 }
+.filtre label:hover {
+    border: 1px solid #0065FC;
+}
 .filtres input {
     opacity: 0;
     position: absolute;
@@ -227,6 +230,9 @@ form .position {
     height: 40px;
     width: 40px;
     background-color: #b7cff3;
+}
+.filtres .pastille:hover {
+    border: 3px solid #0065fc;
 }
 .filtres span {
     font-weight: bold;
